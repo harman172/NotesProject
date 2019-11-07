@@ -67,6 +67,7 @@
                     <navigationItem key="navigationItem" id="ixE-wm-0VI"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="editButton" destination="ixE-wm-0VI" id="s9G-TX-XyW"/>
                         <outlet property="tableFolders" destination="4Gm-Lp-ccv" id="iMq-gZ-BEN"/>
                     </connections>
                 </viewController>

@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
+    @IBOutlet weak var editButton: UINavigationItem!
     @IBOutlet weak var tableFolders: UITableView!
     
     var folders: [String]?
@@ -20,9 +21,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
         // Do any additional setup after loading the view.
         folders = []
-        self.navigationItem.rightBarButtonItem = self.editButtonItem
-        self.navigationItem.rightBarButtonItem?.tintColor = .black
+        editButton.rightBarButtonItem = editButtonItem
+        editButton.rightBarButtonItem?.tintColor = .black
         
+        tableFolders.isEditing = false
     }
     
     
@@ -43,11 +45,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return cell
         
     }
-    
-    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        return true
-    }
-    
+
+//
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete{
             

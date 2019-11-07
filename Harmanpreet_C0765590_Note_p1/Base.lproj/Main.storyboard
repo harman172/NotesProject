@@ -39,6 +39,10 @@
                                 <rect key="frame" x="0.0" y="99" width="375" height="519"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="M2o-k5-aca" id="NmE-h3-Efo"/>
+                                    <outlet property="delegate" destination="M2o-k5-aca" id="CQh-hM-4f9"/>
+                                </connections>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Folders" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Bb-Va-bPC">
                                 <rect key="frame" x="16" y="69" width="337" height="31"/>
@@ -62,6 +66,9 @@
                     </toolbarItems>
                     <navigationItem key="navigationItem" id="ixE-wm-0VI"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableFolders" destination="4Gm-Lp-ccv" id="iMq-gZ-BEN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Feu-j6-raA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
